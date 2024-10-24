@@ -7,7 +7,7 @@ const port = 5000;
 
 // Middleware
 app.use(cors({
-  origin: ["https://go-snap-frontend.vercel.app/"],
+  origin: ["https://go-snap-frontend.vercel.app"],
   methods: ["POST", "GET"],
   credentials: true
 })); // Enable CORS!
