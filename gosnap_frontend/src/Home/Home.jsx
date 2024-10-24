@@ -29,7 +29,7 @@ function Home() {
   const [zoom, setZoom] = useState(1);
   const [croppedAreaPixels, setCroppedAreaPixels] = useState(null);
 
-  const base = 'https://go-snap-backend.vercel.app/';
+  const base = 'https://go-snap-backend.vercel.app/api/image';
   const onCropComplete = useCallback((_, croppedAreaPixels) => {
     setCroppedAreaPixels(croppedAreaPixels);
   }, []);
