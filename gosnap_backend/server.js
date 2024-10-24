@@ -9,7 +9,7 @@ const port = 5000;
 const allowedOrigins = ['https://go-snap-frontend.vercel.app'];
 app.use(cors({
     origin: allowedOrigins,
-    methods: ['GET', 'POST'], // Add other methods as needed
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Add other methods as needed
     credentials: true // If you need to support credentials
 }));
 
