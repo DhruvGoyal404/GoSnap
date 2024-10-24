@@ -20,5 +20,6 @@
   },
   "devDependencies": {
     "@types/multer": "^1.4.12"
-  }
+  },
+  "proxy": "https://go-snap-backend.vercel.app"
 }
