@@ -6,11 +6,13 @@ const app = express();
 const port = 5000;
 
 // Middleware
+const allowedOrigins = ['https://go-snap-frontend.vercel.app'];
 app.use(cors({
-  origin: ["https://go-snap-frontend.vercel.app"],
-  methods: ["POST", "GET"],
-  credentials: true
-})); // Enable CORS!
+    origin: allowedOrigins,
+    methods: ['GET', 'POST'], // Add other methods as needed
+    credentials: true // If you need to support credentials
+}));
+
 app.use(json());
 
 // Use routes
